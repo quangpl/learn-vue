@@ -2,28 +2,35 @@
   <div class="hello">
 
    <ul>
-       <div v-show="isShow">
+<div v-show="isShow">
 <b-button v-on:click="handleClick" variant="outline-success">Click me</b-button>
 <b-button v-on:click="handleSubmit" variant="outline-info">Submit</b-button>
 <p>Your value : {{count}}</p>
+<p>Your subCount : {{sub_count}}</p>
+
        </div>
 <b-button v-on:click="handleShow" variant="outline-danger">Show/Hide</b-button>
     </ul>
+  <div>
+      <input v-model="name"/>
+   <p style="margin-top:20px;"> Your name : {{name}} </p>
+   <p>Hello {{school|fb('VNUHCM')}}</p>
   </div>
-  
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Info',
-  props: {
-    gmail: String,
-    facebook: String
+  props: ['gmail','facebook'],
+  filters:{
+  fb:function(sc,pre){
+     return `${sc} ${pre}`
+}
   },
   methods:{
       handleClick:function (){
        this.count=this.count+1;
-       console.log(val);
       },
       handleShow: function(){
           this.isShow=!this.isShow
@@ -33,11 +40,19 @@ export default {
       }
   },
   data:()=>{
-     return{
+     return {
          items:['oto','moto','car','bike','foot'],
          count:0,
-         isShow:false
+         name:'quang',
+         school:'UIT',
+         isShow:false,
+         color:'red'
      }
+  },
+  computed:{
+    sub_count: function(){
+      return this.count+4;
+    }
   }
 }
 </script>
