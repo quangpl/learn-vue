@@ -2,10 +2,12 @@
   <div class="hello">
 
    <ul>
+       <div v-show="isShow">
 <b-button v-on:click="handleClick" variant="outline-success">Click me</b-button>
+<b-button v-on:click="handleSubmit" variant="outline-info">Submit</b-button>
 <p>Your value : {{count}}</p>
-
- 
+       </div>
+<b-button v-on:click="handleShow" variant="outline-danger">Show/Hide</b-button>
     </ul>
   </div>
   
@@ -21,12 +23,20 @@ export default {
   methods:{
       handleClick:function (){
        this.count=this.count+1;
+       console.log(val);
+      },
+      handleShow: function(){
+          this.isShow=!this.isShow
+      },
+      handleSubmit: function(){
+          alert(this.count)
       }
   },
   data:()=>{
      return{
          items:['oto','moto','car','bike','foot'],
-         count:0
+         count:0,
+         isShow:false
      }
   }
 }
