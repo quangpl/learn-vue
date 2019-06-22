@@ -7,10 +7,12 @@
 <b-button v-on:click="handleSubmit" variant="outline-info">Submit</b-button>
 <p>Your value : {{count}}</p>
 <p>Your subCount : {{sub_count}}</p>
-
+<b-button v-on:click="handleSubmit" variant="outline-info">Bus Event</b-button>
        </div>
 <b-button v-on:click="handleShow" variant="outline-danger">Show/Hide</b-button>
     </ul>
+<b-button v-on:click="handleBus" variant="outline-danger">Bus Event</b-button>
+
   <div>
       <input v-model="name"/>
    <p style="margin-top:20px;"> Your name : {{name}} </p>
@@ -37,6 +39,9 @@ export default {
       },
       handleSubmit: function(){
           alert(this.count)
+      },
+      handleBus: function(){
+        this.$root.$emit('newClick');
       }
   },
   data:()=>{
@@ -53,6 +58,11 @@ export default {
     sub_count: function(){
       return this.count+4;
     }
+  },
+  mounted(){
+    this.$root.$on('newClick',()=>{
+      console.log('You are clicking');
+    });
   }
 }
 </script>
