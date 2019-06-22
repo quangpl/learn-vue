@@ -1,20 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-    To learning new <b>Framework</b>, I will make pet project. It's a short way to success with me. Now, go VueJS.
-<p> Data from <b>Form Component </b> : {{$store.getters.data}}
-    </p>
-    <p>I'm <b class="name">{{name}}</b></p>
+  <label for="flavor"> Your favourite dream </label>
+  <input name="flavor" v-on:input="handleChange"/>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-    name: String
+  name: 'Form',
+  methods:{
+    handleChange:function (event){
+        this.$store.commit('change',event.target.value)
+    }
   }
 }
 </script>

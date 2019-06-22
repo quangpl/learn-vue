@@ -1,21 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-    To learning new <b>Framework</b>, I will make pet project. It's a short way to success with me. Now, go VueJS.
-<p> Data from <b>Form Component </b> : {{$store.getters.data}}
-    </p>
-    <p>I'm <b class="name">{{name}}</b></p>
+  <p>You choose:  {{$store.getters.data}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-    name: String
-  }
+  name: 'Display'
 }
 </script>
 

@@ -1,13 +1,16 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Info from './components/Info'
+import Form from './components/Form'
+import Display from './components/Display'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-    Info
+    Display,
+    Form,
+    HelloWorld
   }
 }
 </script>
@@ -15,7 +18,8 @@ export default {
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="A pet project for learning VueJS :D" name="Quang"/>
-    <Info/>
+    <Display/>
+    <Form/>
   </div>
 </template>
 
