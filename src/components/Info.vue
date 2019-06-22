@@ -11,7 +11,7 @@
        </div>
 <b-button v-on:click="handleShow" variant="outline-danger">Show/Hide</b-button>
     </ul>
-<b-button v-on:click="handleBus" variant="outline-danger">Bus Event</b-button>
+<b-button v-on:click="handleBus('new var')" variant="outline-danger">Bus Event</b-button>
 
   <div>
       <input v-model="name"/>
@@ -40,8 +40,8 @@ export default {
       handleSubmit: function(){
           alert(this.count)
       },
-      handleBus: function(){
-        this.$root.$emit('newClick');
+      handleBus: function(val){
+        this.$root.$emit('newClick',val);
       }
   },
   data:()=>{
@@ -60,8 +60,9 @@ export default {
     }
   },
   mounted(){
-    this.$root.$on('newClick',()=>{
+    this.$root.$on('newClick',(val)=>{
       console.log('You are clicking');
+      console.log(val);
     });
   }
 }
