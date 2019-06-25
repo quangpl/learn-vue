@@ -1,28 +1,19 @@
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Form from './components/Form'
-import Display from './components/Display'
-
-
+import Home from './containers/Home'
 export default {
   name: 'app',
-  components: {
-    Display,
-    Form,
-    HelloWorld
+  components:{
+    Home
   }
 }
 </script>
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="A pet project for learning VueJS :D" name="Quang"/>
-     <router-link to="/info">Go to Info</router-link>
-    <router-link to="/form">Go to Form</router-link>
-    <router-view></router-view>
-  </div>
+<div>
+<Home/>
+</div>
 </template>
+              
 
 
 <style>

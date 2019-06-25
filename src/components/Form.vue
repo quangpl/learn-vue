@@ -1,14 +1,20 @@
 <template>
-  <div class="hello">
-  <label for="flavor"> Your favourite dream </label>
-  <input name="flavor" v-on:input="handleChange"/>
-  </div>
-
+<div class="form">
+   <b-form-group
+          :label-cols="0"
+          label="Enter movie's name"
+        >
+          <b-form-input v-model.trim="name"></b-form-input>
+        </b-form-group>
+        <b-button variant="primary" size="lg">Search</b-button>
+        </div>
 </template>
 
 <script>
 export default {
-  name: 'Form'
+  name: 'Form',
+  props: {
+  }
 }
 </script>
 
@@ -31,5 +37,8 @@ a {
 .name{
     color: #42b983;
     font-weight: 800;
+}
+.form{
+    margin:50px;
 }
 </style>

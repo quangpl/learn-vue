@@ -1,17 +1,24 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-    To learning new <b>Framework</b>, I will make pet project. It's a short way to success with me. Now, go VueJS.
-<p> Data from <b>Form Component </b> : {{$store.getters.data}}
-    </p>
-    <p>I'm <b class="name">{{name}}</b></p>
+<div>
+       <b-navbar toggleable="lg" type="dark" variant="primary">
+    <b-navbar-brand href="#">CuliMovie</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  </b-navbar>
+  <Form/>
+  <Movie name="New movie"/>
   </div>
 </template>
 
 <script>
+import Form from '../components/Form'
+import Movie from '../components/Movie'
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
+  components:{
+  Form,
+  Movie
+  },
   props: {
     msg: String,
     name: String
