@@ -58,12 +58,6 @@ export default {
     sub_count: function(){
       return this.count+4;
     }
-  },
-  mounted(){
-    this.$root.$on('newClick',(val)=>{
-      console.log('You are clicking');
-      console.log(val);
-    });
   }
 }
 </script>

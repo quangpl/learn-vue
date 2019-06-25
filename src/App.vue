@@ -18,8 +18,9 @@ export default {
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="A pet project for learning VueJS :D" name="Quang"/>
-    <Display/>
-    <Form/>
+     <router-link to="/info">Go to Info</router-link>
+    <router-link to="/form">Go to Form</router-link>
+    <router-view></router-view>
   </div>
 </template>
 

@@ -8,12 +8,7 @@
 
 <script>
 export default {
-  name: 'Form',
-  methods:{
-    handleChange:function (event){
-        this.$store.commit('change',event.target.value)
-    }
-  }
+  name: 'Form'
 }
 </script>
 
