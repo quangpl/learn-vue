@@ -1,0 +1,76 @@
+{
+    "Search": [
+    {
+    "Title": "The Cat in the Hat",
+    "Year": "2003",
+    "imdbID": "tt0312528",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTI5MDU3MTYyMF5BMl5BanBnXkFtZTYwODgyODc3._V1_SX300.jpg"
+    },
+    {
+    "Title": "Top Hat",
+    "Year": "1935",
+    "imdbID": "tt0027125",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BN2Q0NjE1NTMtOTY5Zi00NWMxLTliOGYtNTg1OGU5M2RjNjVkXkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Fear of a Black Hat",
+    "Year": "1993",
+    "imdbID": "tt0106880",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTIxOTE5Mzk1M15BMl5BanBnXkFtZTcwNTAzMTAwMQ@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "The Cat in the Hat",
+    "Year": "1971",
+    "imdbID": "tt0284714",
+    "Type": "movie",
+    "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzOTY4MjIyMF5BMl5BanBnXkFtZTcwNzg0NTMyMQ@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Professor Kosta Vujic's Hat",
+    "Year": "2012",
+    "imdbID": "tt2054808",
+    "Type": "movie",
+    "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWQ2YWZiNjgtYzg5NS00NWJlLWEwNzQtYzUzODkyZDZlNDRlXkEyXkFqcGdeQXVyMjI0NTYyMTM@._V1_SX300.jpg"
+    },
+    {
+    "Title": "The Horse Ate the Hat",
+    "Year": "1928",
+    "imdbID": "tt0018523",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYWZmMjhmMmEtN2UwYi00ZTMxLTg5YTktMTIwODJjZTlhN2RkXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Walter and Carlo - Up on Daddys Hat",
+    "Year": "1985",
+    "imdbID": "tt0090288",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYjFhNmRkNTAtMzdjYy00NGM1LWE4ZTUtZTJjYWYwOWI5MmUyXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Man in a Cocked Hat",
+    "Year": "1959",
+    "imdbID": "tt0053044",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjEzOTAyMzA1OV5BMl5BanBnXkFtZTcwNjg3ODQyMQ@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "The Cat in the Hat",
+    "Year": "2003",
+    "imdbID": "tt0421957",
+    "Type": "game",
+    "Poster": "https://ia.media-imdb.com/images/M/MV5BMTUzNjQ3ODkxNF5BMl5BanBnXkFtZTgwNTI4MTk4MDE@._V1_SX300.jpg"
+    },
+    {
+    "Title": "The New York Hat",
+    "Year": "1912",
+    "imdbID": "tt0002391",
+    "Type": "movie",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTgzNDIwMzM3MV5BMl5BanBnXkFtZTcwOTAxOTAyMQ@@._V1_SX300.jpg"
+    }
+    ],
+    "totalResults": "486",
+    "Response": "True"
+    }
