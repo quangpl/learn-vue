@@ -23,4 +23,4 @@ export const store = new Vuex.Store({
         listFilm: state => state.listFilm,
         filmName: state => state.filmName
     }
-})
+});

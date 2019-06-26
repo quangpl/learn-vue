@@ -1,19 +1,21 @@
 
 <script>
 import Home from './containers/Home'
+
 export default {
   name: 'app',
   components:{
     Home
   }
 }
+
 </script>
 <template>
 <div>
-<Home/>
+    <router-view></router-view>
 </div>
 </template>
-              
+
 
 
 <style>
@@ -24,6 +26,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  margin:25px;
 }
 </style>

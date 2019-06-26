@@ -1,7 +1,7 @@
 <template>
     <div class="form">
-        <b-form-group
-                :label-cols="0"
+        <b-form-group v-loading="true"
+                      :label-cols="0"
                 label="Enter movie's name"
         >
             <b-form-input v-model.trim="filmName" v-on:input="handleChange"></b-form-input>
@@ -16,7 +16,9 @@
         props: {},
         data: function () {
             return {
-                filmName: ''
+                filmName: '',
+                loading: true,
+                color: '#000000'
             }
         },
         methods: {
