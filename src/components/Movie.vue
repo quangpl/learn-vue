@@ -1,24 +1,23 @@
 <template>
     <div>
-        <b-card-group  style="margin:10px;" v-for="(item,index) in Search" deck>
+        <b-card-group style="margin:30px;" v-for="(item,index) in $store.getters.listFilm||Search" deck>
             <b-card
-                    border-variant="primary"
-                    v-bind:header="item.imdbID"
-                    header-bg-variant="primary"
-                    header-text-variant="white"
-                    align="center"
-                    v-bind:footer="item.Year"
+                    bg-variant="dark"
+                    img-alt="Card Image"
+                    text-variant="white"
+                    v-bind:title="item.imdbID"
+                    v-bind:sub-title="item.Year"
             >
-                <b-card-text>{{item.Title}}</b-card-text>
-
+                <b-card-text>
+                    {{item.Title}}
+                </b-card-text>
+                <b-button href="#" variant="primary">View</b-button>
             </b-card>
-
         </b-card-group>
     </div>
 </template>
 
 <script>
-    import axios from 'axios'
     export default {
         name: 'Movie',
         props: {
@@ -26,16 +25,11 @@
         },
         data: function () {
             return {
-                Search:[]
+                Search: []
             }
         },
-        mounted () {
-            axios
-                .get('http://www.omdbapi.com/?apikey=41e34b17&s=hat')
-                .then(response => {
-                    console.log(response);
-                    this.Search = response.data.Search
-                })
+        mounted() {
+            //load something
         }
     }
 </script>
@@ -54,10 +48,6 @@
     li {
         display: inline-block;
         margin: 0 10px;
-    }
-
-    .movie {
-        margin: 10px;
     }
 
 </style>
