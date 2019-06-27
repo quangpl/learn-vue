@@ -11,7 +11,7 @@
                 <b-card-text>
                     {{item.Title}}
                 </b-card-text>
-                <b-button v-bind:href="'#/detail/'+item.imdbID" variant="primary">View</b-button>
+                <b-button v-bind:href="'/detail/'+item.imdbID" variant="primary">View</b-button>
             </b-card>
         </b-card-group>
     </div>

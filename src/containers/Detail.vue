@@ -35,7 +35,7 @@
         </b-col>
       </b-row>
   </div>
- <h1 style="font-size:30px; text-align:center; margin:30px;" v-else>Loading...<br></br><b-img src="loading.gif"></b-img></h1>
+ <h1 style="font-size:30px; text-align:center; margin:30px;" v-else>Loading...<br></br><b-img src="https://i.imgur.com/4PnQE6P.gif"></b-img></h1>
 </template>
 
 <script>
