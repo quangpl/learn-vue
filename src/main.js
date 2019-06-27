@@ -10,8 +10,7 @@ import Detail from './containers/Detail'
 
 const routes = [
     { path: '/detail/:id', component: Detail },
-    { path: '/', component: Home },
-    { path: '/detail', component: Detail },
+    { path: '/', component: Home }
 ];
 
 const router = new VueRouter({
@@ -30,11 +29,13 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //Font awesome
-import 'vue-awesome/icons'
-import Icon from 'vue-awesome/components/Icon'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-Vue.component('icon', Icon)
+library.add(faStar)
 
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 new Vue({

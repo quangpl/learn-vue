@@ -1,26 +1,20 @@
 
 <script>
-import Home from './containers/Home'
-
 export default {
-  name: 'app',
-  components:{
-    Home
-  }
-}
-
+  name: "app"
+};
 </script>
 <template>
-<div>
+  <div>
     <router-view></router-view>
-</div>
+  </div>
 </template>
 
 
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
