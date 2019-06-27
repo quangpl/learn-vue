@@ -1,6 +1,5 @@
-<template>
-  <div  v-if="!isLoading">
-    <b-navbar toggleable="lg" type="dark" variant="primary">
+<template> <div>
+<b-navbar toggleable="lg" type="dark" variant="primary">
       <b-navbar-brand href="#">CuliMovie</b-navbar-brand>
       <b-navbar-nav>
         <b-nav-item>
@@ -13,6 +12,8 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     </b-navbar>
 
+  <div  v-if="!isLoading">
+   
       <div class="header"><span style="font-size:31px; color:#fff;">{{this.film.Title}}  <span style="margin-left:10px;font-size:23px">{{this.film.imdbRating}}<font-awesome-icon style="font-size:23px;color:yellow; margin:5px;" icon="star" /></span></span><p style="color:silver; font-size:14px;">
 {{this.film.Runtime}}| {{this.film.Genre}} | {{this.film.Released}}</p></div>
       <b-row>
@@ -36,6 +37,7 @@
       </b-row>
   </div>
  <h1 style="font-size:30px; text-align:center; margin:30px;" v-else>Loading...<br></br><b-img src="https://i.imgur.com/4PnQE6P.gif"></b-img></h1>
+</div>
 </template>
 
 <script>
