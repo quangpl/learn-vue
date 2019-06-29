@@ -9,20 +9,22 @@
     </b-navbar-nav>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
   </b-navbar>
+  <Promote />
   <Form />
-  <Movie name="New movie" />
+  <Movie />
 </div>
 </template>
 
 <script>
 import Form from '../components/Form'
 import Movie from '../components/Movie'
-
+import Promote from '../components/Promote'
 export default {
   name: 'Home',
   components: {
     Form,
-    Movie
+    Movie,
+    Promote
   },
   props: {
     msg: String,
