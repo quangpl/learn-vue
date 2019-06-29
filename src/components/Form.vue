@@ -1,10 +1,14 @@
 <template>
-  <div class="form">
-    <b-form-group v-loading="true" :label-cols="0" label="Enter movie's name">
-      <b-form-input v-model.trim="filmName" v-on:input="handleChange"></b-form-input>
-    </b-form-group>
-    <b-button variant="primary" size="lg">Search</b-button>
-  </div>
+<div class="form">
+  <b-form-group v-loading="true" :label-cols="0" label="Enter movie's name">
+    <b-form-input v-model.trim="filmName" v-on:input="handleChange"></b-form-input>
+  </b-form-group>
+  <b-button variant="primary" v-on:click="handleReset()" size="lg">Reset</b-button>
+  <b-dropdown v-if="this.$store.getters.hasSort" id="dropdown-left" text="Sort" size="lg" variant="primary" style="float:right;" class="m-2">
+    <b-dropdown-item v-on:click="sortFilm(true)">Year Smalest</b-dropdown-item>
+    <b-dropdown-item v-on:click="sortFilm(false)">Year Largest</b-dropdown-item>
+  </b-dropdown>
+</div>
 </template>
 
 <script>
@@ -14,13 +18,20 @@ export default {
   data: function() {
     return {
       filmName: "",
-      loading: true,
-      color: "#000000"
+      hasLoad: false,
+      loading: true
     };
   },
   methods: {
     handleChange: function() {
       this.$store.commit("change", this.filmName);
+    },
+    handleReset: function() {
+      this.$store.commit('reset');
+      this.filmName = '';
+    },
+    sortFilm: function(sort) {
+      this.$store.commit('sort', sort)
     }
   }
 };
